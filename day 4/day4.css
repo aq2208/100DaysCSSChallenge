@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #E56262;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 50%;
+
+    animation: big 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+    animation-fill-mode: both;
+}
+
+.medium {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 101;
+
+    animation: medium 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+    animation-fill-mode: both;
+}
+
+.small {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    z-index: 102;
+    border-radius: 50%;
+    animation: small 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes big {
+    0%, 10% {
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+
+	100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
+
+@keyframes medium {
+    0%, 40% {
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+
+	100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
+
+@keyframes small {
+    0%, 70% {
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+
+	100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
+
+
+

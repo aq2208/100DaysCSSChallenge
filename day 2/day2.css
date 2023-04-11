@@ -1,0 +1,144 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: rgb(63,175,130);
+    border-radius: 5px;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line-1,.line-2,.line-3 {
+    width: 83px;
+    height: 8px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.line-3 {
+    margin-bottom: 0;
+}
+
+.center:hover {
+    cursor: pointer;
+}
+
+@keyframes animation-line-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(22px);
+    }
+
+    100% {
+        transform: translateY(22px) rotate(45deg);
+    }
+}
+
+@keyframes animation-line-1-reverse {
+    0% {
+        transform: translateY(22px) rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(0) translateY(22px) ;
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes animation-line-2 {
+    0% {
+        opacity: 1;
+    }
+
+    55% {
+        transform: scale(60%);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animation-line-2-reverse {
+    0% {
+        opacity: 0;
+    }
+
+
+    50% {
+        opacity: 0;
+    }
+
+    55% {
+        transform: scale(60%);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-line-3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-21.5px);
+    }
+
+    100% {
+        transform: translateY(-21.5px) rotate(135deg);
+    }
+}
+
+@keyframes animation-line-3-reverse {
+    0% {
+        transform: translateY(-21.5px) rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(0) translateY(-21.5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
