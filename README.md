@@ -5,5 +5,5 @@
 
 👉 Applying Advanced CSS Concepts such as CSS Animations, CSS Flex-box, CSS Grid, and more.
 
-📌 Github Pages: 
+📌 Github Pages: https://aq2208.github.io/100DaysCSSChallenge/index.html
 
